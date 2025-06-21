@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css">
+    <title>Wscubetch</title>
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="enModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Enquire Now</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="" class="bannerform p3">
+                <h4>Book Your Free classes Now</h4>
+                <p>2 days of free classes without paying in advance </p>
+                <div class="mb-3">
+                    <label class="form-lable">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-lable">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-lable">Phone</label>
+                    <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">+91</span>
+                    <input type="number" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="mt-3">
+                    <button type="button" class="btn btn-secondary"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="This top tooltip is themed via CSS variables.">Register Now</button>
+                  </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookDemo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Book Demo</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="" class="bannerform p3">
+                <h4>Book Your Free classes Now</h4>
+                <p>2 days of free classes without paying in advance </p>
+                <div class="mb-3">
+                    <label class="form-lable">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-lable">Phone</label>
+                    <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">+91</span>
+                    <input type="number" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="mt-3">
+                    <button type="button"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="This top tooltip is themed via CSS variables.">Register Now</button>
+                  </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<header class="container-fluid shadow-lg py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg">  
+                    <a class="navbar-brand" href="home.html">
+                        <img class="im" src="images/images.png"> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-items">
+                                <a class="nav-link" href="#" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">Course</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown link
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li class="color"><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                      </div>
+                </nav>
+                
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <img class="im" src="images/images.png"> 
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-items">
+                                <a class="nav-link" href="#" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">Course</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown link
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li class="color"><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section class="container-fluid py-lg-5 py-sm-4 py-3">
+        <div class="container">
+            <div class="row justify-content-between gy-4 algin-items-center">
+                <div class="col-lg-6">
+                    <div class="banner">
+                        <h1>Carrer Opportunities <br/> in  <span>Digital Marketing</span></h1>
+                        <p>Digital marketing course so good , you only pay-after-placement </p>
+                        <ul class="m-0 p-0">
+                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Speciliaztion: performance Marketing</li>
+                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min sailry of Rs 4.5 LPA</li>
+                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 sets only</li>
+                        </ul>
+                        <div class="bannerbtn d-flex gap-3">
+                            <button data-bs-toggle="modal" data-bs-target="#bookDemo">Book 2 Days Demo</button>
+                            <button data-bs-toggle="modal" data-bs-target="#enModal"> <i class="fa-solid fa-cloud-arrow-down"></i> Download Curriculum</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <form action="" class="bannerform shadow-lg">
+                        <h4>Book Your Free classes Now</h4>
+                        <p>2 days of free classes without paying in advance </p>
+                        <div class="mb-3">
+                            <label class="form-lable">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-lable">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-lable">Phone</label>
+                            <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">+91</span>
+                            <input type="number" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="mt-3">
+                            <button type="button" class="btn btn-secondary"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Register Now">Register Now</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container shadow-lg mt-5 counterSection">
+            <div class="row p-4 row-cols-lg-5 row-cols-md-5 row-cols-2">
+                <div class="col">
+                    <h2>1000+</h2>
+                    <p>Students Trained</p>
+                </div>
+                <div class="col">
+                    <h2>₹4.5 LPA</h2>
+                    <p>Students Trained</p>
+                </div>
+                <div class="col">
+                    <h2>320+</h2>
+                    <p>Recruiting Parteners</p>
+                </div>
+                <div class="col">
+                    <h2>10:00 am+</h2>
+                    <p>programe Timings</p>
+                </div>
+                <div class="col">
+                    <h2>11th May</h2>
+                    <p>Next Batch starts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" container-fluid highlight-section py-4">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2>Key highlights of the Course</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, dolorem </p>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex algin-items-start gap-3 highlightsitems">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <div>
+                            <h4>Assignments &<br/> Modules test</h4>
+                            <p>Test your knowladge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex algin-items-start gap-3 highlightsitems">
+                        <i class="fa-regular fa-house-chimney"></i>
+                        <div>
+                            <h4>Industry-recognized<br/> Certification</h4>
+                            <p>Stand out to your professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex algin-items-start gap-3 highlightsitems">
+                        <i class="fa-solid fa-download"></i>
+                        <div>
+                            <h4>Downloadeable <br/>content</h4>
+                            <p>with life time acces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex algin-items-start gap-3 highlightsitems">
+                        <i class="fa-solid fa-headphones"></i>
+                        <div>
+                            <h4>Assignments &<br/> Modules test</h4>
+                            <p>Test your knowladge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex algin-items-start gap-3 highlightsitems">
+                        <i class="fa-solid fa-web-awesome"></i>
+                        <div>
+                            <h4>Assignments &<br/> Modules test</h4>
+                            <p>Test your knowladge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex algin-items-start gap-3 highlightsitems">
+                        <i class="fa-solid fa-user"></i>
+                        <div>
+                            <h4>Assignments &<br/> Modules test</h4>
+                            <p>Test your knowladge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5 bg-light mt-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center fw-bold">Curriculum of <br/> Our Digital Marketing</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem accusamus delectus sed?</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 tabmysystem">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#introduction" type="button" >Introduction</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#case-studies" type="button" 
+                          >Case Studies</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#google-adsens" type="button" >Google Adsens</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#seo-mystery" type="button">
+                            Seo Mystery</button>
+                        </li>
+                    </ul>
+
+                    
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="introduction">
+                        <div class="row shadow-lg p-4 tabitems">
+                            <div class="col-lg-6">
+                                <h3>Introduction</h3>
+                                <ul class="m-0 p-0">
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Speciliaztion: performance Marketing</li>
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min sailry of Rs 4.5 LPA</li>
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 sets only</li>
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Speciliaztion: performance Marketing</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="m-0 p-0">
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Speciliaztion: performance Marketing</li>
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min sailry of Rs 4.5 LPA</li>
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 sets only</li>
+                                    <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Speciliaztion: performance Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="case-studies">
+                        <div class="row shadow-lg p-4">
+                            <div class="col-lg-6">
+                                <h3>Case studies</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ab adipisci mollitia laudantium error modi quaerat deleniti neque quam sit, dolorum minus deserunt illum, assumenda nam laborum porro dolores nulla?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="google-adsens">
+                        <div class="row shadow-lg p-4">
+                            <div class="col-lg-6">
+                                <h3>Google adsens</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ab adipisci mollitia laudantium error modi quaerat deleniti neque quam sit, dolorum minus deserunt illum, assumenda nam laborum porro dolores nulla?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="seo-mystery">
+                        <div class="row shadow-lg p-4">
+                            <div class="col-lg-6">
+                                <h3>Seo Mstery</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ab adipisci mollitia laudantium error modi quaerat deleniti neque quam sit, dolorum minus deserunt illum, assumenda nam laborum porro dolores nulla?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+         </div>
+    </div>
+    </section>
+
+
+    <section class="container-fluid bg-secondary-subtle py-5 mt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center fw-bold">Digital Marketing Course <br/> FAQs</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. At optio molestiae aperiam</p>
+
+                    <div class="accordion btn-1" id="accordionExample">
+                        <div class="accordion-item mb-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                             1 What is Web devlopment?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the  variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+
+                          <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                2 What is Website Devlopment?
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                          </div>  
+
+                          <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                 3 What is Course Source?
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                          </div>  
+                          
+                          <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    4 what is the project of WS cube-tech ?
+                                </button>
+                            </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"> 
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <navbar class="container-fluid py-2 shadow-lg pb-4">
+        <div class="container">
+            <div class="row algin-items-center">
+                <figure class="col-lg-6 mb-0 pb-0">
+                    <img class="im" alt="header-logo" src="images/images.png"> </figure>
+                <div class="col-lg-6 col-12 text-lg-center text-center">  
+                    <div class="btn-outer d-flex gap-3 justify-content-end">
+                    <button class="btn whatsappbtn"
+                        data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-custom-class="custom-popover"
+                        
+                        data-bs-content="Chat With Us In Whatsap">
+                     <i class="fa-brands fa-whatsapp"></i> Chat with Us</button>
+                    <button class="btn call"  data-bs-content="Call Us"  data-bs-toggle="popover" data-bs-placement="top">
+                    <i class="fa-solid fa-phone-volume"></i> Call Us</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+</script>
+</html>
